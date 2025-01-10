@@ -1,0 +1,8 @@
+POST http://localhost:8000/create_book
+Content-Type: application/json
+
+{
+    "title": "111",
+    "author": "123"
+}
+
