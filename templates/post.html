@@ -1,0 +1,19 @@
+{% include 'common/head.html' %}
+
+<body>
+    <h1>I am the post page</h1>
+    <article>
+        <header>{{ page.title }}</header>
+        <section>{{ page.body }}</section>
+    </article>
+    <h1>Here is My Posts</h1>
+    <article>
+        <section>
+            <<a href="{{ url_for('greet', name = author) }}">
+                Welcome to my Post, {{ author }}
+                </a>
+        </section>
+    </article>
+</body>
+
+</html>
